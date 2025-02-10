@@ -1,0 +1,28 @@
+Problem: the rect doesn't stick to the ceiling which (because its a pillar ofc)
+
+i want to make the pillar stick to the ceiling.
+
+solution one:
+    instead of changing the y axis, change the height of the pillar where you only make the pillar always summon at y = 0 (the ceiling) then just change the gap between the two rects
+    problem is that i dont know how to make the pillar seem like its not going too deep
+
+
+problem:
+    each time the first rect changes its height randomly the second rect also changes but with the same size, what i want to do is that I want the second rect to adjust
+    depending on the size of the first rect
+
+    lets say there's a maximum of 500 height where the first rect has the height of 300 and the second rect is 100 so there's an extra gap which is 100 pixels
+    and now 
+
+
+    height gap limit
+
+    height : the object's height
+    gap : the object's gap inbetween the two objects
+    limit : how big the area where the two objects reside
+
+    limit is equal to 800
+    gap is 200
+    height is 200
+
+    x = limit - gap - height

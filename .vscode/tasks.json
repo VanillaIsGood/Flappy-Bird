@@ -1,0 +1,39 @@
+    {
+        "version": "2.0.0",
+        "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe build active file",
+            "command": "C:/MinGW/x86_64-14.2.0-release-posix-seh-msvcrt-rt_v12-rev0/mingw64/bin/g++.exe",
+            "args": [
+            "-g",
+            "-std=c++17",
+            "-I${workspaceFolder}/include",   
+            "-I${workspaceFolder}/include/sdl",
+            "-I${workspaceFolder}/headers", 
+            "-L${workspaceFolder}/lib",
+            "${workspaceFolder}/src/*.cpp",
+            "-lmingw32",
+            "-lSDL2main",
+            "-lSDL2",
+            "-lSDL2_image",
+            "-lSDL2_mixer",
+            "-lSDL2_ttf",
+            "-o",
+            "${workspaceFolder}/Loga.exe"
+            ],
+            "options": {
+            "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+            "$gcc"
+            ],
+            "group": {
+            "kind": "build",
+            "isDefault": true
+            },
+            "detail": "compile: C:/MinGW/x86_64-14.2.0-release-posix-seh-msvcrt-rt_v12-rev0/mingw64/bin/g++.exe"
+        }
+        ]
+    }
+    
